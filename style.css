@@ -1,0 +1,144 @@
+/* #reg{
+    font-family: arial;
+    background-color: #ffffff;
+    padding: 10px;
+    align-self: center;
+    
+} */
+body{ 
+    text-align: center;
+    position: absolute;
+
+} 
+input[type=text], select, input[type=number], input[type=email] {
+    width: 100%;
+    padding: 12px ;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    box-sizing: border-box;
+    
+  }
+
+  input[type=submit] {
+    width: 100%; 
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    
+  } 
+  
+ #registration_form{
+     position: relative;
+     /* text-align: center; */
+     top: 20px;
+     /* left: 25%;; */
+     /* float: center; */
+    /* width: 100%; */
+    max-width: 960px;
+} 
+
+@media (min-width: 561px){
+    #nameclass{
+        display: grid;
+        /* max-width: 960px;  */
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(6, minmax(30px,auto));
+        grid-gap: 20px;
+        grid-template-areas: 
+        "firstname firstname middleinitial lastname lastname suffix"
+        "add1 add1 add1 add1 add2 add2"
+        "city city state state zip zip"
+        "phone phone email email . ."
+        "check check check check check check"
+        ". . button button . . ";
+        /* width: 80%; */
+    }
+}
+
+
+  
+ @media (max-width: 560px){
+    #nameclass{
+        display: grid;
+        /* max-width: 960px;  */
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(13,minmax(30px,auto));
+        grid-gap: 20px;
+        grid-template-areas: 
+        "firstname"
+        "middleinitial"
+        "lastname"
+        "suffix"
+        "add1"
+        "add2"
+        "city"
+        "state"
+        "zip"
+        "phone"
+        "email"
+        "check"
+        "button";
+        /* width: 80%; */
+    }
+    
+
+}
+
+#first_name{
+    grid-area: firstname;
+
+}
+#middle_initial{
+    /* width: 50%; */
+    grid-area: middleinitial;
+
+}
+#last_name{
+  /* width: 100%; */
+  grid-area: lastname;
+
+}
+#suffix{
+    /* width: 50%; */
+  grid-area: suffix;
+} 
+#address1{
+  grid-area: add1;
+}
+#address2{
+  grid-area: add2;
+}
+#city{
+  grid-area: city;
+}
+#state{
+  grid-area: state;
+}
+#zipcode{
+  grid-area: zip;
+}
+#phone{
+  grid-area: phone;
+}
+#email{
+  grid-area: email;
+}
+
+#checkboxclass{
+    grid-area: check;
+}
+#button{
+    grid-area: button;
+    
+}
+
+
+
+
+

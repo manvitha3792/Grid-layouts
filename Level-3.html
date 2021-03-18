@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title> CSS Grid Level-3</title>
+    <style>
+        body{
+            text-align: center;
+        }
+        #content{
+            
+            /*width: 1440px;
+            height: 1024px;*/
+            max-width: 960px;
+            display: grid;
+            grid-gap:10px;
+            grid-template-columns: repeat(12, 1fr);
+            grid-template-rows: repeat(12, minmax(50px, auto));
+            margin: 0 auto;
+        }
+        #content > *{
+			padding: 10px;
+		}
+        #A{
+            background-color: pink;
+            grid-column: 1 / 13;
+            grid-row: 1 / 4;
+        }
+        #B{
+            background-color: powderblue;
+            grid-column: 1/9;
+            grid-row: 4 / 13;
+        }
+        #C{
+            background-color: lightcoral;
+            grid-column: 9 / 13;
+            grid-row: 4 / 13;
+        }
+        @media screen and (max-width: 375px){
+            #content{
+            
+            /*width: 1440px;
+            height: 1024px;*/
+            max-width: 960px;
+            display: grid;
+            grid-gap:10px;
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(6, minmax(50px, auto));
+            margin: 0 auto;
+        }
+        #content > *{
+			padding: 10px;
+		}
+        #A{
+            background-color: pink;
+            grid-column: span 1;
+            grid-row: 1 / 3;
+        }
+        #B{
+            background-color: powderblue;
+            grid-column: span 1;
+            grid-row: 3 / 6;
+        }
+        #C{
+            background-color: lightcoral;
+            grid-column: span 1;
+            grid-row: 6 / 7;
+        }
+        };
+    </style>
+</head>
+<body>
+    <div id="content">
+        <div id="A">A</div>
+        <div id="B">B</div>
+        <div id="C">C</div>
+    </div>
+</body>
+</html>

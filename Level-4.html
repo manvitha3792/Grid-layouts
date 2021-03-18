@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title> CSS Grid Level-4</title>
+    <style>
+        body{
+            text-align: center;
+        }
+        #content{
+            
+            /*width: 1440px;
+            height: 1024px;*/
+            max-width: 960px;
+            display: grid;
+            grid-gap:10px;
+            grid-template-columns: repeat(12, 1fr);
+            grid-template-rows: repeat(12, minmax(50px, auto));
+            margin: 0 auto;
+        }
+        #content > *{
+			padding: 10px;
+		}
+        #A{
+            background-color: pink;
+            grid-column: 1 / 13;
+            grid-row: 1 / 4;
+        }
+        #B{
+            background-color: powderblue;
+            grid-column: 1 / 9;
+            grid-row: 4 / 9;
+        }
+        #C{
+            background-color: lightcoral;
+            grid-column: 1 / 5;
+            grid-row: 9 / 13;
+        }
+        #D{
+            background-color: lightgreen;
+            grid-column: 5 / 9;
+            grid-row: 9 / 13;
+        }
+        #E{
+            background-color: lightyellow;
+            grid-column: 9 / 13;
+            grid-row: 4 / 13;
+        }
+        @media screen and (max-width: 375px){
+            #content{
+            
+            /*width: 1440px;
+            height: 1024px;*/
+            max-width: 960px;
+            display: grid;
+            grid-gap:10px;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: repeat(5, minmax(100px, auto));
+            margin: 0 auto;
+        }
+        #content > *{
+			padding: 10px;
+		}
+        #A{
+            background-color: pink;
+            grid-column: 1 / 3;
+            grid-row: 1 / 2;
+        }
+        #B{
+            background-color: powderblue;
+            grid-column: span 3;
+            grid-row: 2 / 4;
+        }
+        #C{
+            background-color: lightcoral;
+            grid-column: 1 / 2;
+            grid-row: 4 / 5;
+        }
+        #D{
+            background-color: lightgreen;
+            grid-column: 2 / 3;
+            grid-row: 4 / 5;
+        }
+        #E{
+            background-color: lightyellow;
+            grid-column: span 3;
+            grid-row: 5 / 6;
+        }
+        };
+    </style>
+</head>
+<body>
+    <div id="content">
+        <div id="A">A</div>
+        <div id="B">B</div>
+        <div id="C">C</div>
+        <div id="D">D</div>
+        <div id="E">E</div>
+    </div>
+</body>
+</html>

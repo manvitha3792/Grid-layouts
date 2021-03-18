@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title> CSS Grid Level-2</title>
+    <style>
+        body{
+            text-align: center;
+        }
+        #content{
+            
+            /*width: 1440px;
+            height: 1024px;*/
+            max-width: 960px;
+            display: grid;
+            grid-gap:10px;
+            grid-template-columns: repeat(12, 1fr);
+            grid-template-rows: minmax(500px, auto);    
+            margin: 0 auto;
+        }
+        #content > *{
+			padding: 10px;
+		}
+        left{
+            background-color: pink;
+            grid-column: 1 / 5;
+            
+        }
+        right{
+            background-color: powderblue;
+            grid-column: 6 / 13;
+        }
+
+        @media screen and (max-width: 375px){
+
+            #content{
+            
+            /*width: 1440px;
+            height: 1024px;*/
+            max-width: 960px;
+            display: grid;
+            grid-gap:10px;
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(2,minmax(200px, auto));    
+            margin: 0 auto;
+        }
+        #content > *{
+			padding: 10px;
+		}
+        left{
+            background-color: pink;
+            grid-row: 1 / 2;
+            grid-column: span 1;
+            
+        }
+        right{
+            background-color: powderblue;
+            grid-row: 2 / 3;
+            grid-column: span 1;
+        }
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <div id="content">
+        <left>Left</left>
+        <right>Right</right>    
+    </div>
+</body>
+</html>

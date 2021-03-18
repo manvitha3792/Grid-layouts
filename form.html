@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <title>Registration Form</title>
+        <meta content="width=device-width, initial-scale=1" name="viewport" />
+
+    </head>
+    <body>
+    <form id="registration_form">
+        <div id="nameclass">
+            <div id="first_name">
+                <input type="text" name="first_name" id ="first_name" placeholder="First Name" required size="30">
+            </div>
+            <div id="middle_initial">
+                <input type="text" name="middle_initial" id="middle_initial" placeholder="Middle Initial (optional)" size="15">
+            </div>
+            <div id="last_name">
+                <input type="text" name="last_name" id="last_name" placeholder="Last Name" required size="30">
+            </div>
+            <div id="suffix">
+                <input type="text" name="suffix" id="suffix" placeholder="Suffix (Optional)" size="15">
+            </div>
+        
+            <div id="address1">
+                <input type="text" name="address1" data-extrachars="46 45 39 32" placeholder="Street Address - Example -10 W Elm St." required>    
+            </div>
+            <div id="address2">
+                <input type="text" name="address2" placeholder="Apartment/Suite (optional)">
+            </div>
+            <div id="city">
+                <input type="text" name="city" placeholder="City" required>
+            </div>
+            <div id="state">
+                <select id="state" name="state" required aria-label="State" tabindex="0">
+                    <!-- <option value="" selected disabled hidden>State</option> -->
+                    <option value="" selected disabled >State</option>
+                    <option value="AL">Alabama</option>
+                    <option value="AK">Alaska</option>
+                    <option value="AZ">Arizona</option>
+                    <option value="AR">Arkansas</option>
+                    <option value="CA">California</option>
+                    <option value="CO">Colorado</option>
+                    <option value="CT">Connecticut</option>
+                    <option value="DE">Delaware</option>
+                    <option value="DC">District Of Columbia</option>
+                    <option value="FL">Florida</option>
+                    <option value="GA">Georgia</option>
+                    <option value="HI">Hawaii</option>
+                    <option value="ID">Idaho</option>
+                    <option value="IL">Illinois</option>
+                    <option value="IN">Indiana</option>
+                    <option value="IA">Iowa</option>
+                    <option value="KS">Kansas</option>
+                    <option value="KY">Kentucky</option>
+                    <option value="LA">Louisiana</option>
+                    <option value="ME">Maine</option>
+                    <option value="MD">Maryland</option>
+                    <option value="MA">Massachusetts</option>
+                    <option value="MI">Michigan</option>
+                    <option value="MN">Minnesota</option>
+                    <option value="MS">Mississippi</option>
+                    <option value="MO">Missouri</option>
+                    <option value="MT">Montana</option>
+                    <option value="NE">Nebraska</option>
+                    <option value="NV">Nevada</option>
+                    <option value="NH">New Hampshire</option>
+                    <option value="NJ">New Jersey</option>
+                    <option value="NM">New Mexico</option>
+                    <option value="NY">New York</option>
+                    <option value="NC">North Carolina</option>
+                    <option value="ND">North Dakota</option>
+                    <option value="OH">Ohio</option>
+                    <option value="OK">Oklahoma</option>
+                    <option value="OR">Oregon</option>
+                    <option value="PA">Pennsylvania</option>
+                    <option value="RI">Rhode Island</option>
+                    <option value="SC">South Carolina</option>
+                    <option value="SD">South Dakota</option>
+                    <option value="TN">Tennessee</option>
+                    <option value="TX">Texas</option>
+                    <option value="UT">Utah</option>
+                    <option value="VT">Vermont</option>
+                    <option value="VA">Virginia</option>
+                    <option value="WA">Washington</option>
+                    <option value="WV">West Virginia</option>
+                    <option value="WI">Wisconsin</option>
+                    <option value="WY">Wyoming</option>
+    
+                </select>
+            </div>
+            <div id="zipcode">
+                <input type="number" name="zipcode" placeholder="Zip Code" required>
+            </div>
+            <div id="phone">
+                <input type="number" name="phone" placeholder="Preferred Phone Number" required>
+            </div>
+            <div id="email">
+                <input type="email" name="email" placeholder="Email Address" required>
+            </div>
+        
+            <div id="checkboxclass">
+                <input type="checkbox" name="agreement" required>
+                <label>By Checking the box, you certify that you have read Electronic Consent and Disclosures, consent to receive disclosures electronically. </label>
+            </div>
+            <div id="button">
+                <input type="button" name="continue" id="continue" value="continue">
+            </div>
+        </div>
+    </form>
+    </body>
+</html>
